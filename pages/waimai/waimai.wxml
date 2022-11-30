@@ -1,0 +1,50 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="rx_tab">
+    
+       <view bindtap="selectTab" data-tab="0"
+        class="rx_tab__item {{tab==0?'rx_tab__item-on':''}}">商品</view>
+       <view bindtap="selectTab" data-tab="1" class="rx_tab__item {{tab==1?'rx_tab__item-on':''}}">评论</view>
+       <view bindtap="selectTab" data-tab="2" class="rx_tab__item {{tab==2?'rx_tab__item-on':''}}">商家</view>
+    </view>
+  </view>
+<view class="page__bd">
+    <swiper
+    current="{{tab}}"
+     bindchange="doMenuChange">
+      <swiper-item>
+        <view class="rx_goods">
+        <view class="menu_wrapper">
+        <scroll-view scroll-y="{{ture}}">
+        <block wx:for="{{goods}}" wx:key="name">
+        <view class="menu-item">
+        <view class="text">{{item.name}}
+        </view>
+        </view>
+        </block>
+        </scroll-view>
+        </view>
+        <view class="foods_wrapper">
+        <scroll-view scroll-y="{{ture}}">
+            <block wx:for="{{goods}}" wx:key="name">
+              <view class="food-list">
+              <view id="order{{index}}" class="title">{{item.name}}</view>
+              </view>
+            <block wx:for="{{item.foods}}" wx:key="name"
+               class="food-item"wx:for-item="food">
+            <view class="name">{{food.name}}</view>
+          </block>
+          </block>
+        </scroll-view>
+        </view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+      2
+      </swiper-item>
+      <swiper-item>
+      3
+      </swiper-item>
+    </swiper>
+</view>
+</view>
