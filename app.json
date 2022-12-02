@@ -1,6 +1,9 @@
 {
   "pages":[
     "pages/waimai/waimai",
+    "pages/video/video",
+    "pages/map/map",
+    
     "pages/didi/index",
     "pages/index/index",
     "pages/logs/logs"

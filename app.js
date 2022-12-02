@@ -1,19 +1,26 @@
 // app.js
 App({
+  // 启动的时候， 生命周期
   onLaunch() {
-    // 展示本地存储能力
-    const logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
+    // this
+    // 任何 page onLoad 更早 
+    wx.request({
+      // json 还是数据交换的格式
+      url: 'https://resources.ninghao.net/wxapp-case/db.json',
+      success: (response) => {
+        const { slides, stories, vehicles } = response.data;
+        // this?
+        // console.log(slides, stories, vehicles);
+        this.globalData.slides = slides;
+        this.globalData.stories = stories;
+        this.globalData.vehicles = vehicles;
       }
     })
   },
+  // 全局数据
   globalData: {
-    userInfo: null
+    slides:null,
+    stories: null,
+    vehicles: null,
   }
 })

@@ -64,6 +64,10 @@
               }
               ]
 
+      - 奶茶小程序的门店选择页
+         1. lbs location bass service
+         2. wx.getlocation
+
 
      -  css技巧
          1. 选择器优先级
@@ -78,6 +82,26 @@
          Block 开始 rx_tab 新的组件
          Element 内部元素的声明 rx_tab_item
          Modifier rx_tab_item-on
+        运用常用css命名套路
+         - BEM 开启新的功能区域
+         - wx_btn .wx_btn-primary
+         - .page>.page__hd+.page__bd+.page__ft
+         - .cell>.cell__hd+.cell__bd+.cell__ft
+         - __ Element 只做一级，用简单单词，不重复
+        
+         5. 小程序不允许在wxss里bgc:url(本地图片)
+          - 小程序之所以小，不要做太多的东西，还有产品大小
+          - 包的大小小于2M，
+          - 使用base64格式的图片，Google的图片格式，更小
+          - bgc:url()
+        6. 视频播放列表页逻辑
+         - 得有远程可播放视频
+         - 视频有poster封面
+         - 显示和点击的是图片
+         - currentVid 逻辑切换
+           dataset.vid
+             image currentVid!==vid
+             video currentVid ==vid
            
           
 

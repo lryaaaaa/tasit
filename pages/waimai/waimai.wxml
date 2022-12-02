@@ -17,7 +17,7 @@
         <view class="menu_wrapper">
         <scroll-view scroll-y="{{ture}}">
         <block wx:for="{{goods}}" wx:key="name">
-        <view class="menu-item">
+        <view class="menu-item{{index==catId?'active':''}}">
         <view class="text">{{item.name}}
         </view>
         </view>
@@ -33,6 +33,7 @@
             <block wx:for="{{item.foods}}" wx:key="name"
                class="food-item"wx:for-item="food">
             <view class="name">{{food.name}}</view>
+            <image src="{{item.image}}"></image>
           </block>
           </block>
         </scroll-view>
