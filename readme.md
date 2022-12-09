@@ -102,6 +102,16 @@
            dataset.vid
              image currentVid!==vid
              video currentVid ==vid
+
+  - 中大型应用，建议采用框架
+    有赞 vant 
+     1. 小程序变成node项目
+        npm init -y   初始化       package.json
+     2.  npm i @vant/weapp -S --production    
+                node_modules/@vant
+     3. 工具 》  构建npm  多了miniprogram_npm
+     4. 去除app.json中 v2
+     5. 引入我们要用的组件
            
           
 
