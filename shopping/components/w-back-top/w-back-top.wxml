@@ -1,0 +1,5 @@
+<!--components/w-back-top/w-back-top.wxml-->
+<!-- <text>components/w-back-top/w-back-top.wxml</text> -->
+<view class='back-top'>
+  <image src="/assets/images/common/3.jpg"/>
+</view>

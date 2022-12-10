@@ -9,6 +9,16 @@ export const getMultiData=()=>{
         url:'/home/multidata',
       })
 }
+export const getProduct=(type,page)=>{
+   return request({
+     url:'/home/data',
+      data:{
+        type,
+        page
+      }
+     
+   })
+}
 export const getProducts=(type,page)=>{
   return request({
     url:'/home/data',

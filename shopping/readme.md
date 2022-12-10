@@ -87,5 +87,38 @@
               把一个页面任务，分成若干开发组件
                - 可以多个页面共享 /components
                - 不共享，只在特定页面出现，页面简洁就放到pege目录下
+
+          -  首页列表复杂业务梳理
+            1. 查询参数有两个
+                page   
+                type
+                先测试接口http://152.136.185.210:7878/api/hy66/home/data?page=${page}&type=${type}
+            2. goods 列表 简单
+                 数据驱动的列表
+            3. 默认的type 为pop  page =1 
+            4. goods:{
+              [type1]:{
+                list:[],
+                page:1
+              },
+              [type2]:{
+                list:[],
+                page:1
+              }
+            }
+            开始时都请求一下，切换tab时马上出来
+             getProductData(type)
+
+
+
+
+
+        - w-goods w-goods-item 组合
+          1. 页面是由组件构成，而不是标签
+          2. 组件就负责渲染，一个业务， properties   triggerEvent
+          3. w-goods 容器组件  集合
+             w-goods-item  功能
+             
+              
                
     

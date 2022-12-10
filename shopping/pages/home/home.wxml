@@ -33,9 +33,9 @@ scroll-top 0 会带顶部 -->
     
     </w-tab-control>
     <!-- 商品列表 -->
-    <!-- <w-goods></w-goods> -->
+    <w-goods goodslist="{{goods[currentType].list}}"></w-goods>
     <!-- 返回顶部 -->
-    <!-- <w-back-top></w-back-top> -->
-  <view style="height:500vh;background-color:green;"></view>
+    <w-back-top bindtap="onBackTop" wx:if="{{showBackTop}}"></w-back-top>
+  <!-- <view style="height:500vh;background-color:green;"></view> -->
   </scroll-view>
 </view>
