@@ -1,0 +1,11 @@
+<scroll-view class="detail" scroll-y>
+    <!-- 图片 -->
+   <w-swiper images="{{topImages}}"></w-swiper>
+   <w-base-info baseInfo="{{baseInfo}}"></w-base-info>
+   <w-shop-info shopInfo="{{shopInfo}}"></w-shop-info>
+   <w-detail-info></w-detail-info>
+   <w-param-info></w-param-info>
+   <w-comment-info></w-comment-info>
+   <w-recommend-info></w-recommend-info>
+</scroll-view>
+<w-botton-bar></w-botton-bar>
