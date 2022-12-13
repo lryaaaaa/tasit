@@ -12,6 +12,7 @@ function request(options){
        data:options.data||{},
        success:function(res){
          resolve(res.data)
+        //  console.log(res.data)
        },
        fail:function(err){
          reject(err)

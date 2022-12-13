@@ -13,7 +13,21 @@ App({
       }
     })
   },
+  addToCart(item){
+    //加入cartlist   之前添加过，再加一
+    const oldInfo=this.globalData.cartList
+     .find(item=>item.iid===obj.iid)
+     if(oldInfo){
+       oldInfo.count++;
+     }else{
+       obj.count=1;
+       obj.checked=true// 默认勾选
+       this.global.cartList.push(obj)
+     }
+    
+  },
+  
   globalData: {
-    userInfo: null
+    cartlist:[]
   }
 })

@@ -1,1 +1,8 @@
 /* pages/detial/detial.wxss */
+.detail {
+  height: calc(100% - 120rpx);
+}
+
+.d-swiper swiper {
+  height: 800rpx;
+}
