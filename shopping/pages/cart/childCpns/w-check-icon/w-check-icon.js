@@ -1,10 +1,13 @@
-// pages/detail/childCpns/w-bottom-bar/w-botom-bar.js
+// pages/cart/childCpns/w-check-icon/w-check-icon.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-       
+       isChecked:{
+         type:Boolean,
+         value:false
+       }
   },
 
   /**
@@ -18,8 +21,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onAddCart() {
-      this.triggerEvent('addcart')
-    }
+
   }
 })

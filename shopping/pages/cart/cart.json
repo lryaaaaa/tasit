@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "cart-list-item":"./childCpns/cart-list-item/cart-list-item",
+    "bottom-bar":"./childCpns/bottom-bar/bottom-bar",
+    "w-check-icon":"./childCpns/w-check-icon/w-check-icon"
+  }
 }

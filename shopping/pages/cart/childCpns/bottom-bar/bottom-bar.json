@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "w-check-icon":"/pages/cart/childCpns/w-check-icon/w-check-icon"
+  }
+}

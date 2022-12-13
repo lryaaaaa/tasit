@@ -197,6 +197,31 @@
        向父组件通信
    - 加入购物车的商品，如何到购物车页面显示已添加商品？
      app.js globalData
+
+
+   - 购物车页面规则开发
+     1. 数据来自于app.globalData
+     2. 生命周期的概念
+           应用启动时触发  app.js中 onlaunch
+           home.js  onload  onshow.. onunload   返回按钮会销毁页面加载缓存
+           cart.js      属于tabber  切换不会unload(卸载缓存)
+           onload 只会执行一次
+           onshow  会执行多次  更新购物车属性
+
+   - 数组的es6方法
+    1. for(let i=o;i<arr.length;i++){
+      计数循环，对CPU友好，对人不行，可读性不行
+    }
+       如果下标很重要的话
+    2. for es6 的升级版
+     for(for item of arr){
+
+     }
+
+    3. 数组的好多功能方法
+       forEach  让每个元素都执行一个回调函数
+       find  任然会像forEach 一样，回调函数 return true 返回当前项
+       reduce 累加计算
        
        
               

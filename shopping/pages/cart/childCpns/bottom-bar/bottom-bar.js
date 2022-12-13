@@ -1,10 +1,13 @@
-// pages/detail/childCpns/w-bottom-bar/w-botom-bar.js
+// pages/cart/childCpns/bottom-bar/bottom-bar.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-       
+     price:{
+       type:Number,
+       value:0
+     }
   },
 
   /**
@@ -18,8 +21,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onAddCart() {
-      this.triggerEvent('addcart')
-    }
+
   }
 })

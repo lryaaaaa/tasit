@@ -1,0 +1,10 @@
+<view class="bottom-bar">
+<view class="check-box">
+<w-check-icon icon="icon" isChecked="{{selected}}">
+</w-check-icon>
+<view>全选</view>
+</view>
+<view class="center">
+总计:￥{{price}}
+</view>
+</view>

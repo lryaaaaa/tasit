@@ -3,12 +3,12 @@ export class GoodsBaseInfo{
     //  console.log(itemInfo,columns,services);
     this.title=itemInfo.title
     this.desc=itemInfo.desc
-    this.newPrise=itemInfo.prise
-    this.oldPrise=itemInfo.oldPrise
+    this.newPrice=itemInfo.price
+    this.oldPrice=itemInfo.oldPrice
     this.discount=itemInfo.discountDesc
     this.columns=columns
     this.services=services
-    this.realPrise=itemInfo.lowNowPrise
+    this.realPrice=itemInfo.lowNowPrice
    }
 }
 export class GoodsShopInfo{
